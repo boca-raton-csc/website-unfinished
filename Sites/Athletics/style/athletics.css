@@ -1,0 +1,48 @@
+.season {
+    text-align: center;
+    background-color:#001640;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    color:white;
+}
+.sport1 {
+    background-color:#b2cafa;
+    color:#546a8f;
+}
+
+.sport2 {
+    color:#00397F;
+}
+
+.sport-title {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size:1.25rem;
+}
+
+.sport-description {
+    margin-left:2rem;
+    padding-left: 1rem;
+    font-size:1rem;
+    padding-bottom: 1rem;
+}
+.dept-contact {
+    background-color:#b2cafa;
+    color:#546a8f;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size:1.25rem;
+    padding-bottom: 1rem;
+}
+.dept-contact h1,h2 {
+    margin-left: 2rem;
+}
+@media (max-width: 520px) {
+    .sport-description {
+        font-size:2vw;
+    }
+    .contact-info {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,39 @@
+doctype html
+// TODO, on final release combine and minify all styles and scripts
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE-edge")
+
+		title Boca Raton Community High School
+
+		meta(name="author", content="Boca Raton HS Computer Science Club")
+		meta(name="keywords", content="Boca, Raton, Community, BRCHS, Bobcat, Bocats, Bobcatnews")
+		meta(name="description", content="TODO")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		link(href="/style/normalize.css", rel="stylesheet", type="text/css")
+		link(href="/style/main.css", rel="stylesheet", type="text/css")
+	body
+		a.assistive-text(href="#content") Skip to content
+		#container
+			header#masthead
+				#welcome.jumbotron
+					#branding
+						h1.site-title Boca Raton Community High School
+						h2.site-description Lorem Ipsum Dolor
+					.background(style="background-image:url(/images/boca-raton-hs.jpg)")
+				nav#mainnav.navigation
+					ul
+						li: a(href="http://jade-lang.com") Item 1
+						li: a(href="#") Item 2
+							ul
+								li: a(href="#") Subitem 1
+								li:	a(href="#") Subitem 2
+								li:	a(href="#") Subitem 3
+								li:	a(href="#") Subitem 4
+						li: a(href="#") Item 3
+						li: a(href="#") Item 4
+			main#content
+			footer#bilge
+				#credits Made by Boca High CSC

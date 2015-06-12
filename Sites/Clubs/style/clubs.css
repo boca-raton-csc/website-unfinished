@@ -1,0 +1,84 @@
+main h1 {
+    margin-right:10%;
+    margin-left:10%;
+}
+
+main h2 {
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.title {
+    position: relative;
+    padding: 1rem;
+    background-color:#001640;
+    color:white;
+}
+
+.charmenu > ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          flex-direction: row;
+}
+.charmenu > ul > li {
+  position: relative;
+}
+.charmenu > ul > li:before {
+  content: "";
+}
+.charmenu > ul > li > ul {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.charmenu > ul {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.charmenu > ul > li {
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+}
+
+.charmenu > ul > li:hover {
+    color:#b2cafa;
+}
+
+@media (max-width: 768px) {
+    .charmenu {
+        display:none;
+    }
+}
+
+.club-type-1 {
+    background-color:#b2cafa;
+    color:#546a8f;
+}
+
+.club-type-2 {
+    color:#00397F;
+}
+
+.club-title {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size:1.25rem;
+}
+
+.club-description {
+    padding-left: 1rem;
+    font-size:1rem;
+    padding-bottom: 1rem;
+}

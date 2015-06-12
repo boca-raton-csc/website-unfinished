@@ -1,0 +1,182 @@
+@import variables
+@import utils
+
+html
+	font-size: 62.5%
+
+body
+	font:
+		family: 'Lato', sans-serif
+		size: 1.6rem
+	-webkit-font-smoothing: antialiased
+
+*
+	box-sizing: border-box
+	transition: all 0.2s
+
+#container
+	min-height: 100vh
+	position: relative
+
+
+#bilge
+	position: absolute
+	bottom: 0
+	transform: translateY(100%)
+	width: 100%
+	padding: 1.0rem
+	background-color: $color-blue-1
+	color: white
+	text-align: center
+
+#masthead
+	min-height: #{$gold-8}vh
+	display: flex
+	flex-direction: column
+	#welcome
+		flex-grow: 2
+		display: flex
+		flex-direction: column
+		justify-content: center
+		#branding
+			width: 100%
+			padding: 2.0rem
+			text-align: center
+			.site-title,
+			.site-description
+				margin: 0
+				color: white
+				text-shadow: 0 0 6px $color-blue-1, 0 0 3px $color-blue-1
+			.site-title
+				margin-bottom: 2.0rem
+		.background
+			filter: blur(5px) brightness(1) grayscale(0.3)
+			@media( max-width: #{$screen-xs} )
+				filter: blur(15px) brightness(1) grayscale(0.3)
+	#mainnav
+		background-color: $color-blue-1
+		color: white
+		letter-spacing: 0.1em
+		> ul
+			justify-content: center
+			> li
+				margin: 0 1.0rem
+				padding: 1.0rem 2.0rem
+				&:hover
+					color: $color-blue-2
+				> a:after
+					content: ""
+					position: absolute
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+
+a
+	color: inherit
+	text-decoration: none
+
+ul
+	margin: 1.0rem 0
+	padding-left: 2.0rem
+	list-style: none
+	li
+		position: relative
+		margin: 1.0rem 0
+		&:before
+			content: "\e099"
+			font:
+				family: "Icons"
+				weight: normal
+				style: normal
+				size: 1.0rem
+			position: absolute
+			top: 0.6rem
+			left: -1.5rem
+			color: $color-blue-1
+
+.title
+	text-align: center
+	letter-spacing: 0.5rem
+	color: $color-blue-1
+
+.site-title
+	@extend .title
+	font-size: 2.4rem
+
+.site-description
+	@extend .title
+	text-transform: lowercase
+	font:
+		size: 1.8rem
+		weight: normal
+		style: italic
+
+.navigation
+	> ul
+		margin: 0
+		padding: 0
+		display: flex
+		flex-direction: row
+		> li
+			position: relative
+			&:before
+				content: ""
+			> ul
+				position: absolute
+				opacity: 0
+				pointer-events: none
+
+table.calender
+	width: 100%
+	max-width: 475px
+	text-align: center
+	margin: 0 auto
+	caption,
+	thead
+		border: 1px solid $color-blue-1
+		background-color: $color-blue-1
+		color: white
+	caption
+		padding: 0.5rem
+		font-weight: bold
+		letter-spacing: 0.3rem
+		.left,
+		.right
+			cursor: pointer
+			margin: 0 1rem
+			color: $color-blue-2
+			&:hover
+				color: white
+		.left
+			float: left
+		.right
+			float: right
+	th, td
+		width: (100%/7)
+		padding: 0.5rem 0
+	th
+		padding-top: 0
+		color: $color-blue-2
+		font-weight: normal
+	td
+		border: 1px solid $color-blue-1
+
+.jumbotron
+	position: relative
+	overflow: hidden
+
+.background
+	z-index: -1
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background:
+		color: grey
+		size: cover
+		position: center
+	transform: scale( 1.1 )
+
+@import fonts

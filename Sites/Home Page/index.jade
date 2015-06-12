@@ -1,0 +1,105 @@
+doctype html
+// TODO, on final release combine and minify all styles and scripts
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE-edge")
+
+		title Boca Raton Community High School
+
+		meta(name="author", content="Boca Raton HS Computer Science Club")
+		meta(name="keywords", content="Boca, Raton, Community, BRCHS, Bobcat, Bocats, Bobcatnews")
+		meta(name="description", content="TODO")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		link(href="/style/normalize.css", rel="stylesheet", type="text/css")
+		link(href="/style/main.css", rel="stylesheet", type="text/css")
+		link(href="/style/homepage.css", rel="stylesheet", type="text/css")
+	body
+		a.assistive-text(href="#content") Skip to content
+		#container
+			header#masthead
+				#welcome.jumbotron
+					#branding
+						h1.site-title Boca Raton Community High School
+						h2.site-description Lorem Ipsum Dolor
+					.background(style="background-image:url(/images/boca-raton-hs.jpg)")
+				nav#mainnav.navigation
+					ul
+						li: a(href="http://jade-lang.com") Item 1
+						li: a(href="#") Item 2
+							ul
+								li: a(href="#") Subitem 1
+								li:	a(href="#") Subitem 2
+								li:	a(href="#") Subitem 3
+								li:	a(href="#") Subitem 4
+						li: a(href="#") Item 3
+						li: a(href="#") Item 4
+			main#content
+				#prow
+					#announcements
+						h1.title Announcements
+						ul.announcements
+							li Lorem ipsum Aliqua proident mollit.
+							li Lorem ipsum Sint laborum fugiat pariatur.
+							li Lorem ipsum Sint esse Ut dolor in.
+							li Lorem ipsum Culpa irure incididunt nulla.
+					#calendar
+						h1.title Calendar
+						table.calender
+							caption
+								span.left.icon.icon-caret-left
+								| CSCanuary
+								span.right.icon.icon-caret-right
+							thead
+								tr
+									th Mon
+									th Tues
+									th Wed
+									th Thur
+									th Fri
+									th Sat
+									th Sun
+							tbody
+								tr
+									td 1
+									td 2
+									td 3
+									td 4
+									td 5
+									td 6
+									td 7
+								tr
+									td 8
+									td 9
+									td 10
+									td 11
+									td 12
+									td 13
+									td 14
+								tr
+									td 15
+									td 16
+									td 17
+									td 18
+									td 19
+									td 20
+									td 21
+								tr
+									td 22
+									td 23
+									td 24
+									td 25
+									td 26
+									td 27
+									td 28
+								tr
+									td 29
+									td 30
+									td 21
+									td
+									td
+									td
+									td
+			footer#bilge
+				#credits Made by Boca High CSC

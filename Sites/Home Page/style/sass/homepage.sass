@@ -1,0 +1,27 @@
+#masthead
+	min-height: #{$gold-10}vh
+	#welcome
+		#branding
+			.site-title
+				font-size: 3.5rem
+			.site-description
+				font-size: 2.5rem
+
+#prow
+	display: flex
+	flex:
+		direction: row
+		wrap: wrap
+	> div
+		width: 100%
+		padding: 2.0rem
+		.title
+			margin-top: 0
+	@media(min-width: #{$screen-sm})
+		#announcements
+			order: 2
+			flex-grow: 2
+			width: auto
+		#calendar
+			order: 1
+			width: #{$gold-9}vw

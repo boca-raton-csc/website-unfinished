@@ -1,0 +1,41 @@
+.title {
+    position: relative;
+    padding: 1rem;
+    background-color:#001640;
+    color:white;
+}
+
+.teacher {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row; 
+}
+
+.faculty {
+    margin-left:5%;
+    margin-right:5%;
+    padding-top:3vw;
+    padding-bottom:3vw;
+}
+
+.faculty img {
+    width:25rem;
+}
+
+@media (max-width: 768px) {
+    .faculty img {
+        width:15rem;   
+    }
+    .faculty {
+        padding-top:5vw;
+        padding-bottom:5vw;
+    }
+}
